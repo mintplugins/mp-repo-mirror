@@ -3,7 +3,7 @@
 Plugin Name: MP Repo Mirror
 Plugin URI: http://moveplugins.com
 Description: You can update your API site (running MP Repo) when this plugin is installed. 
-Version: 1.0.1
+Version: 1.4.02
 Author: Move Plugins
 Author URI: http://moveplugins.com
 Text Domain: mp_repo_mirror
