@@ -25,10 +25,10 @@
 function mp_repo_mirror_theme_api_change( $api_url ){
 	
 	//If the URL we want to replace is found in this plugin's api URL
-	if ( strpos( $api_url, mp_core_get_option( 'mp_repo_mirror_general',  'url_to_search') !== false ) ){
+	if ( strpos( $api_url, mp_core_get_option( 'mp_repo_mirror_settings_general',  'url_to_search') !== false ) ){
 		
 		//Replace the URL with the one we defined in our settings
-		$api_url = str_replace( mp_core_get_option( 'mp_repo_mirror_general',  'url_to_search'), mp_core_get_option( 'mp_repo_mirror_general',  'replacement_url') );
+		$api_url = str_replace( mp_core_get_option( 'mp_repo_mirror_settings_general',  'url_to_search'), mp_core_get_option( 'mp_repo_mirror_settings_general',  'replacement_url') );
 	}
 	
 	return $api_url;
@@ -48,10 +48,10 @@ add_filter( 'mp_core_theme_update_package_url', 'mp_repo_mirror_theme_api_change
 function mp_repo_mirror_plugin_api_change( $api_url ){
 	
 	//If the URL we want to replace is found in this plugin's api URL
-	if ( strpos( $api_url, mp_core_get_option( 'mp_repo_mirror_general',  'url_to_search') !== false ) ){
+	if ( strpos( $api_url, mp_core_get_option( 'mp_repo_mirror_settings_general',  'url_to_search') !== false ) ){
 		
 		//Replace the URL with the one we defined in our settings
-		$api_url = str_replace( mp_core_get_option( 'mp_repo_mirror_general',  'url_to_search'), mp_core_get_option( 'mp_repo_mirror_general',  'replacement_url') );
+		$api_url = str_replace( mp_core_get_option( 'mp_repo_mirror_settings_general',  'url_to_search'), mp_core_get_option( 'mp_repo_mirror_settings_general',  'replacement_url') );
 	}
 	
 	return $api_url;
